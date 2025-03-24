@@ -1,0 +1,41 @@
+[project]
+name = "generate-llm-txt"
+version = "0.1.0"
+description = "agnoを用いて与えられたキーワードを検索し1ファイルにまとめるCLIツール"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+dependencies = [
+    "requests>=2.30.0",
+    "agno>=1.0.0",
+    "click>=8.0.0",
+    "mcp>=0.1.0",
+    "playwright>=1.42.0",
+    "anthropic>=0.49.0",
+    "sqlalchemy>=2.0.39",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[project.scripts]
+generate-llm-txt = "src.generate_llm_txt:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

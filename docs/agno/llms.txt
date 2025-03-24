@@ -1,0 +1,43 @@
+# Agno-AGI
+
+> Agno-AGI is a lightweight library for building Multimodal AI Agents with memory, knowledge, and tools. It exposes Large Language Models (LLMs) as a unified API, giving them capabilities like memory, knowledge retrieval, tool usage, and reasoning.
+
+Agno (ἁγνὸ, meaning "pure" in Greek) is designed to be simple, fast, and model-agnostic. It allows developers to build lightning-fast Agents that can work with text, images, audio, and video. The framework enables the creation of AI agents at different levels of sophistication, from basic inference tasks to teams of specialized agents collaborating on complex workflows.
+
+Key features include:
+- Lightning-fast performance (10,000x faster agent creation than alternatives)
+- Model-agnostic approach supporting any LLM provider
+- Multimodal capabilities supporting text, image, audio, and video
+- Memory management for persistent agent state
+- Knowledge stores for domain-specific information
+- Tool integration for enhanced agent capabilities
+- Multi-agent architecture for complex workflows
+
+## Core Concepts
+
+- [Agent Overview](concepts/agent.md): The fundamental building block of Agno-AGI
+- [Models](concepts/models.md): Supported models and model integration
+- [Tools](concepts/tools.md): Agent tool usage and available tools
+- [Memory](concepts/memory.md): How agents persist information across sessions
+- [Knowledge](concepts/knowledge.md): How agents access and use domain-specific information
+- [Multi-agent Teams](concepts/teams.md): Building teams of specialized agents
+
+## Implementation
+
+- [Getting Started](implementation/getting_started.md): How to build your first agent
+- [Installation](implementation/installation.md): Installing and setting up Agno-AGI
+- [Performance](implementation/performance.md): Performance benchmarks and optimization
+
+## Examples
+
+- [Basic Agent](examples/basic_agent.md): Simple agent without tools or memory
+- [Web Search Agent](examples/web_search_agent.md): Agent that can search the web
+- [Knowledge-based Agent](examples/knowledge_agent.md): Agent with domain-specific knowledge
+- [Multimodal Agent](examples/multimodal_agent.md): Agent that works with multiple modalities
+- [Agent Team Example](examples/agent_team.md): Multiple agents working together
+
+## Optional
+
+- [Advanced Concepts](advanced/reasoning.md): Advanced reasoning techniques
+- [Integrations](advanced/integrations.md): Third-party integrations
+- [Community Resources](resources/community.md): Discord, forums, and other community resources

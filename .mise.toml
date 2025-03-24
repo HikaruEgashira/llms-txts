@@ -1,0 +1,9 @@
+[tools]
+python = "3.11"
+
+[env]
+PYTHONPATH = "$PYTHONPATH:."
+
+[tasks.generate-llms-txt]
+description = "llms.txtを実行"
+run = "uv run -m src.generate_llms_txt"

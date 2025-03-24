@@ -1,0 +1,3 @@
+use uv, python, agno, mise
+do not use deprecated typing ex: List → list, Optional[T] → T | None
+deny inline comment
