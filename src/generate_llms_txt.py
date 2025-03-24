@@ -3,6 +3,7 @@ import click
 import asyncio
 from agno.agent import Agent
 from agno.tools.mcp import MCPTools
+from agno.tools.github import GithubTools
 from agno.models.anthropic import Claude
 from agno.storage.agent.sqlite import SqliteAgentStorage
 from mcp import StdioServerParameters
@@ -37,12 +38,20 @@ async def runAgent(keyword: str, output_folder: str):
     )
 
     async with MCPTools(server_params=server_params) as mcp_tools:
+        github_tools = GithubTools(
+            access_token=os.environ["GITHUB_TOKEN"],
+            create_issue=False,
+            create_repository=False,
+            list_branches=False,
+            list_repositories=False,
+        )
+        
         agent = Agent(
             model=Claude(
                 id="claude-3-7-sonnet-20250219",
                 thinking={"type": "enabled", "budget_tokens": 1024},
             ),
-            tools=[mcp_tools, write_file],
+            tools=[mcp_tools, write_file, github_tools],
             storage=SqliteAgentStorage(
                 table_name="agent_sessions", db_file="tmp/agent_storage.db"
             ),
@@ -50,6 +59,7 @@ async def runAgent(keyword: str, output_folder: str):
             num_history_responses=3,
             show_tool_calls=True,
             markdown=True,
+            stream=True,
             retries=2,
         )
 
