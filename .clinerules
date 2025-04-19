@@ -1,3 +1,4 @@
 use uv, python, agno, mise
 do not use deprecated typing ex: List → list, Optional[T] → T | None
 deny inline comment
+use "uv add", "uv sync" instead of "uv pip" (legacy)
