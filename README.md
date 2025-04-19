@@ -1,4 +1,4 @@
-## 1. generate-llm-txt
+## 1. generate-llms-txt
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python: 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
@@ -25,17 +25,17 @@ npx playwright install
 コマンドラインから以下のように実行します：
 
 ```bash
-mise run generate-llm-txt "検索キーワード"
+mise run generate-llms-txt "検索キーワード"
 ```
 
 ## 例
 
 ```bash
 # "agno"に関する情報を検索して出力
-mise run generate-llm-txt "agno.com"
+mise run generate-llms-txt "agno.com"
 
 # "claude"に関する情報を検索して、customフォルダに出力
-mise run generate-llm-txt "claude" --output custom
+mise run generate-llms-txt "claude" --output custom
 ```
 
 ## ライセンス
