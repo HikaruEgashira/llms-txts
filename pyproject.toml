@@ -35,7 +35,7 @@ line-length = 88
 target-version = "py38"
 
 [project.scripts]
-generate-llm-txt = "src.generate_llm_txt:main"
+generate-llms-txt = "src.generate_llms_txt:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
