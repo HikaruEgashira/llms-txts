@@ -1,0 +1,26 @@
+# Whisk
+
+> Whisk is Google Labs' visual ideation tool that allows users to create images by combining and remixing visual elements without needing to master prompt engineering. Built on Google's Imagen 3 model, Whisk enables fast visual experimentation through an intuitive interface.
+
+Whisk represents Google's approach to democratizing image creation by making the process more intuitive and accessible. Users can upload reference images that serve as guidance for subject, scene, and style, which the system then uses to generate new images that capture their essence.
+
+## Core Concepts
+
+- [Image Generation](whisk/image_generation.md): How Whisk generates images using Imagen 3 and processes reference images using Gemini
+- [Visual Categories](whisk/visual_categories.md): Understanding the Subject, Scene, and Style categories in Whisk
+- [User Experience](whisk/user_experience.md): Description of Whisk's user interface and workflow
+
+## Features
+
+- [Whisk Animate](whisk/animate.md): Feature for Google One AI Premium subscribers that transforms generated images into short videos using Veo 2
+- [Image Remixing](whisk/remixing.md): How Whisk combines different visual elements to create new compositions
+
+## Technical Details
+
+- [Architecture](whisk/architecture.md): Overview of the technical implementation of Whisk, including the use of Gemini and Imagen 3
+- [Limitations](whisk/limitations.md): Current constraints and challenges of the Whisk platform
+
+## Optional
+
+- [Google Labs Ecosystem](whisk/ecosystem.md): How Whisk fits into Google's broader AI creative tools including ImageFX, MusicFX, and VideoFX
+- [Responsible AI](whisk/responsible_ai.md): Google's approach to safety, ethics, and content policies in Whisk
