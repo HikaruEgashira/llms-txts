@@ -30,7 +30,10 @@ async def write_file(file_path: str, content: str) -> None:
 async def runAgent(keyword: str, output_folder: str):
     server_params = StdioServerParameters(
         command="npx",
-        args=["@playwright/mcp@latest"],
+        args=[
+            "@playwright/mcp@latest",
+            "--headless"
+        ],
         env={
             "NODE_OPTIONS": "--no-warnings",
         },
