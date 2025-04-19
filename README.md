@@ -7,7 +7,9 @@ Opinioned llms.txt generator. powerd by Agno AI Agent.
 - [agno](./docs/agno)
 - [whisk](./docs/whisk)
 
-## Generate llms.txt
+## Development
+
+### Generate llms.txt
 
 ```bash
 mise run generate-llms-txt "agno.com"
@@ -15,7 +17,7 @@ mise run generate-llms-txt "agno.com"
 mise run generate-llms-txt "claude" --output docs/claude
 ```
 
-## Setup
+### Setup
 
 ```bash
 uv pip install -e .
