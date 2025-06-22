@@ -42,7 +42,7 @@ async def runAgent(keyword: str, output_folder: str):
     async with MCPTools(server_params=server_params) as mcp_tools:
         agent = Agent(
             model=Claude(
-                id="claude-3-7-sonnet-20250219",
+                id="claude-sonnet-4-20250514",
                 thinking={"type": "enabled", "budget_tokens": 1024},
             ),
             tools=[mcp_tools, write_file],
